@@ -1,0 +1,149 @@
+/* Simple dark theme styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #202123;
+  color: #e0e0e0;
+  height: 100vh;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 260px;
+  background: #171717;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.new-chat {
+  background: #6d28d9;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.chat-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.chat-item {
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  background: #2a2a2a;
+  cursor: pointer;
+}
+
+.chat-item:hover {
+  background: #333;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  justify-content: space-between;
+  background: #202123;
+}
+
+.header {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.shortcuts button {
+  background: #343541;
+  color: white;
+  border: 1px solid #303136;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.chat-window {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.input-area {
+  display: flex;
+  background: #343541;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+.input-area input:focus {
+  outline: none;
+}
+
+.send-btn {
+  background: #6d28d9;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.bubble {
+  max-width: 80%;
+  padding: 12px;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+
+.user {
+  align-self: flex-end;
+  background: #4caf50;
+  color: black;
+}
+
+.bot {
+  align-self: flex-start;
+  background: #444654;
+}
